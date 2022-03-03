@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "marvel2";
+  src: url("./assets/fonts/marvel\ 2.otf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100;300;500;700&display=swap");
+
+h1 {
+  font-family: "marvel2" !important;
+  font-size: 12rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 9rem;
+  }
+}
+
+h2 {
+  font-family: "Roboto" !important;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: "marvel2" !important;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.mt-n {
+  margin-top: -1rem;
+}
+.mt-n5 {
+  margin-top: -4rem;
+}
+
+a {
+  text-decoration: none;
+  z-index: 9999;
+}
+
+p {
+  font-family: "Roboto" !important;
+  font-size: 1rem;
+}
+
+/*CUSTOM CLASES--->HERO && NAV**/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav {
+  z-index: 1;
+}
+
+.navigation {
+  background-color: #ed1d23;
+}
+
+.hero {
+  background-color: #ed1d23;
+}
+
+.hero-image {
+  margin-top: -17rem;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+/** NEWS CUSTOM CSS*/
+
+.news h1 {
+  font-size: 7rem;
+  font-weight: 300;
+  font-style: italic;
+  background: -webkit-linear-gradient(rgb(38, 156, 253), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.news p {
+  font-family: "Roboto" !important;
+  font-size: 1rem;
+  color: rgb(139, 139, 139);
+}
+
+.card {
+  overflow: hidden;
+  border: none;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  min-height: 350px;
+}
+
+.date {
+  color: rgb(209, 209, 209);
+}
+
+.card-body {
+  background-color: #ed1d23;
+  max-height: 290px;
+}
+
+.card-body h5 {
+  color: white;
+}
+.card-body p {
+  color: white;
+}
+
+.card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: 0.2s all ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.3);
+}
+
+/** BUTTON EFFECT W GLITCH ANIM*/
+
+button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #ff0000;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ff0000;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ff0000;
+  z-index: -1;
+}
+
+button:hover,
+button:focus {
+  color: white;
+}
+
+button:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/*PODCASTS SECTION*/
+
+.podcasts-1 {
+  margin-right: 1rem;
+}
+
+/*HEROES SECTION*/
+
+.custom-shape-divider-top-1646295180 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.heroes_section {
+  background-image: url("./assets/images/blueBg.jpg");
+}
+.villains_section {
+  background-image: url("./assets/images/redBg.jpg");
+}
+
+.heroes-h1 {
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .heroes-h1 {
+    margin-top: 3rem;
+  }
+
+  .big-heading {
+    font-size: 7rem;
+  }
+}
+
+.snap-wrapper {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  margin-top: 5rem;
+}
+
+.snap-card {
+  scroll-snap-align: center;
+  min-width: 33%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .snap-card {
+    min-width: 100%;
+  }
+}
+
+.snap-card h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+.snap-card img {
+  border-radius: 50%;
+  border: 10px solid white;
+}
