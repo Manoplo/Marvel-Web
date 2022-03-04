@@ -43,6 +43,16 @@ h2 {
   font-size: 2rem;
   font-weight: 300;
 }
+h3 {
+  font-family: "Roboto" !important;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+h4 {
+  font-family: "Roboto" !important;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 
 h5 {
   font-family: "marvel2" !important;
@@ -259,7 +269,8 @@ button:active {
   margin: auto;
   overflow: auto;
   scroll-snap-type: x mandatory;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .snap-card {
@@ -285,4 +296,90 @@ button:active {
 .snap-card img {
   border-radius: 50%;
   border: 10px solid white;
+}
+
+/*VIDEOS SECTION*/
+
+.videos_section {
+  background-image: url("./assets/images/stainless-steel-10.jpg");
+}
+
+.videos-h1 {
+  margin-top: 1rem;
+}
+
+/*CHARACTER FINDER SECTION*/
+
+.finder h1 {
+  font-size: 7rem;
+  font-weight: 300;
+  font-style: italic;
+  background: -webkit-linear-gradient(rgb(38, 156, 253), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.finder p {
+  font-family: "Roboto" !important;
+  font-size: 1rem;
+  color: rgb(139, 139, 139);
+}
+
+.hero-card {
+  /* border: 1px solid rgb(211, 211, 211); */
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 3px 10px 18px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+.hero-card h5 {
+  font-family: "marvel2" !important;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.hero-card a {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+input {
+  width: 300px;
+  padding: 15px;
+  border: 2px solid red;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+}
+
+input:focus {
+  width: 680px;
+  outline: invert;
+  outline-color: rgb(38, 156, 253);
+}
+
+@media screen and (max-width: 768px) {
+  input:focus {
+    width: 400px;
+    outline: invert;
+    outline-color: rgb(38, 156, 253);
+  }
+}
+
+/*FOOTER STYLES*/
+
+footer {
+  background-color: #ed1d23;
+  margin-top: 3rem;
+}
+
+footer h1 {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  footer h1 {
+    font-size: 5rem;
+  }
 }

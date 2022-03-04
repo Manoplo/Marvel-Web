@@ -163,6 +163,7 @@
                 <div class="row">
                     <div class="col heroes-h1">
                         <h1 class="text-white fst-italic big-heading">HEROES </h1>
+                        <h4 style="margin-top: -40px;" class="text-white fst-italic">Top heroes of the month</h4>
                     </div>
                 </div>
             </div>
@@ -216,6 +217,7 @@
                 <div class="row">
                     <div class="col villains-h1">
                         <h1 class="text-white fst-italic big-heading">VILLAINS </h1>
+                        <h4 style="margin-top: -40px;" class="text-white fst-italic">Top villains of the month</h4>
                     </div>
                 </div>
             </div>
@@ -268,6 +270,79 @@
         </section>
 
     </main>
+    <!--VIDEOS SECTION-->
+    <main class="container-fluid videos">
+        <section class="videos_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col videos-h1">
+                        <h1 class="text-white fst-italic big-heading">VIDEOS </h1>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/fGQI7w_ukJ8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/L-S2CTeZ-Hk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/GbVloIMRzN4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/aqxkUobdy8Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CHARACTER FINDER SECTION-->
+        <section class="container finder flex justify-content-center">
+            <h1 class="text-primary mt-5">CHARACTER FINDER</h1>
+            <p style="margin-top: -25px;">Search for your favourite characters!</p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <input type=" text" placeholder="Search for your favourite character">
+                    <button onclick="fetchChars()">Search</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="hero-card flex justify-content-center align-content-center">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>MARVELHUB</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -278,6 +353,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
