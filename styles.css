@@ -412,3 +412,36 @@ footer h4 {
     margin-top: 10px;
   }
 }
+
+/*HEROES PAGES STYLES*/
+
+.navbar-heroes {
+  background-color: #ed1d23;
+  margin-top: -2rem;
+}
+
+.hero-wrapper {
+  height: 100vh;
+}
+
+.hero-display h1 {
+  font-size: 7rem;
+  font-weight: 300;
+}
+
+.hero-display p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(114, 114, 114);
+}
+
+.hero-footer {
+  margin-top: none;
+}
+
+.bio-wrapper {
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 3px 10px 18px 10px rgba(0, 0, 0, 0.1);
+}

@@ -7,7 +7,6 @@ const heroInput = document.getElementsByTagName("input");
 
 const fetchChars = async () => {
   const charName = heroInput[0].value;
-  console.log(charName);
 
   heroCard.innerHTML = "";
 
@@ -34,6 +33,7 @@ const fetchChars = async () => {
   );
   const data = await response.json();
   console.log(data);
+
   const {
     data: { results },
   } = data;
@@ -62,7 +62,7 @@ const fetchChars = async () => {
 
   heroCard.innerHTML = `
       <div class="hero-card-img">
-          <img src="${imageUrl}" width="100%" alt="">
+          <img src="${imageUrl}" width="100%" alt="Hero Image">
       </div>
       <div class="hero-card-body">
           <h5>${results[0].name}</h5>
@@ -80,17 +80,13 @@ const fetchChars = async () => {
   
   
   `;
-
-  console.log(results[0].name);
-  console.log(results[0].thumbnail.path);
 };
 
 const fetchFirst = async () => {
   const chars = ["Spider-Man (2099)", "Iron Man", "Hulk"];
   const rng = Math.floor(Math.random() * chars.length);
-  console.log(rng);
+
   const charName = chars[rng];
-  console.log(charName);
 
   heroCard.innerHTML = "";
 
@@ -98,7 +94,7 @@ const fetchFirst = async () => {
     `https://gateway.marvel.com:443/v1/public/characters?apikey=${localApIKey}&nameStartsWith=${charName}`
   );
   const data = await response.json();
-  console.log(data);
+
   const {
     data: { results },
   } = data;
@@ -128,9 +124,6 @@ const fetchFirst = async () => {
   
   
   `;
-
-  console.log(results[0].name);
-  console.log(results[0].thumbnail.path);
 };
 
 window.onload = fetchFirst();
