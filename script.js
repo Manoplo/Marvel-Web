@@ -106,7 +106,7 @@ const fetchFirst = async () => {
 
   heroCard.innerHTML = `
       <div class="hero-card-img">
-          <img src="${imageUrl}" width="100%" alt="">
+          <img src="${imageUrl}" width="100%" alt="Hero Picture">
       </div>
       <div class="hero-card-body">
           <h5>${results[0].name}</h5>
